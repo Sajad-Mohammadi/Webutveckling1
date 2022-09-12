@@ -1,0 +1,117 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+}
+
+/*-------------------------------header---------------------------------*/
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px #0000000a;
+}
+
+.logo {
+  width: 140px;
+  margin-left: 20px;
+  padding: 4px;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+header ul {
+  padding: 0;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  padding: 5px 0;
+  border-bottom: 2px solid #13dd9a;
+  transition: 0.3s;
+}
+
+.btn-contact {
+  background: none;
+  font-size: 20px;
+  padding: 4px 12px;
+  border: 1px solid #13dd9a;
+  margin-right: 20px;
+  border-radius: 50px;
+  font-family: "Inconsolata", monospace;
+}
+
+.btn-contact:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 10px #00000023;
+  transition: 0.3s;
+}
+
+/*--------------------------------container 1--------------------------------*/
+
+.flex-container {
+  display: flex;
+  background-color: #85ffbd;
+  justify-items: center;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.flex-child {
+  height: 600px;
+}
+
+.welcome-div {
+  flex-grow: 1.8;
+  text-align: center;
+}
+
+.slide-div {
+  flex-grow: 1;
+}
+
+.welcome-text {
+  margin: 50px auto;
+  width: 500px;
+  font-size: 54px;
+}
+
+.clients {
+  margin-top: 140px;
+}
+
+.client-icon {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.iphone {
+  width: 220px;
+  margin-top: 50px;
+}
+
+.flex-IG {
+  display: grid;
+}
+
+.find-us {
+  transform: rotate(90deg);
+}
