@@ -3,3 +3,9 @@
 
 # WebStorm
 *.iml
+
+# Package Files
+*.war
+*.nar
+*.ear
+*.tar.gz
