@@ -70,9 +70,13 @@ header a:hover {
 
 .flex-container {
   display: flex;
-  background-color: #85ffbd;
-  justify-items: center;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background: rgb(153, 238, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(153, 238, 255, 0) 5%,
+    rgba(153, 238, 255, 1) 41%,
+    rgba(189, 255, 235, 1) 100%
+  );
 }
 
 .flex-child {
