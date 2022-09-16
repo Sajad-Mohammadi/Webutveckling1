@@ -11,19 +11,36 @@
   </head>
   <body>
 
+    <header class="header">
+      <img class="logo" src="images/logo.png" alt="logo" />
+
+      <ul>
+        <li><a href="">Hem 🏠</a></li>
+        <li><a href="">Vårt Team</a></li>
+        <li><a href="">Tjänster</a></li>
+      </ul>
+
+      <button
+        type="button"
+        class="btn-contact border-gradient border-gradient-green"
+      >
+        Kontakta Oss
+      </button>
+    </header>
+
     <div class="container-contact">
       <form action="thanks.html">
 
-        <label for="fnamn">Förnamn</label>
+        <label for="fnamn">Förnamn</label><br>
         <input type="text" id="=fnamn" name="förnamn" placeholder="förnamn.."><br><br>
 
-        <label for="enamn">Efternamn</label>
+        <label for="enamn">Efternamn</label><br>
         <input type="text" id="=enamn" name="efternamn" placeholder="efternamn.."><br><br>
 
-        <label for="tel">Telefonnummer</label>
+        <label for="tel">Telefonnummer</label><br>
         <input type="text" id="=tel" name="telefonnummer" placeholder="123-45 67 89" pattern="[0-9]{3}-[0-9]{2} [0-9]{2} [0-9]{2}"><br><br>
 
-        <label for="stad">Stad</label>
+        <label for="stad">Stad</label><br>
         <select id="stad" name="Stad">
           <option value="Eskilstuna">Eskilstuna</option>
           <option value="stockholm">Stockholm</option>
@@ -31,7 +48,7 @@
           <option value="uppsala">Uppsala</option>
         </select><br><br>
 
-        <label for="txt">Fråga</label>
+        <label for="txt">Fråga</label><br>
         <textarea id="textarea" name="text" placeholder="skriv din fråga här.."></textarea><br><br>
 
         <input type="submit" value="Sicka">
