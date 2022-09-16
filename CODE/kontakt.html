@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakta Oss</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="kontakt.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="kontakt.css"/>
   </head>
   <body>
 
@@ -15,21 +15,36 @@
       <img class="logo" src="images/logo.png" alt="logo" />
 
       <ul>
-        <li><a href="">Hem 🏠</a></li>
-        <li><a href="">Vårt Team</a></li>
-        <li><a href="">Tjänster</a></li>
+        <li><a href="index.html">Hem 🏠</a></li>
+        <li><a href="team.html">Vårt Team</a></li>
+        <li><a href="tjanster.html">Tjänster</a></li>
       </ul>
 
       <button
         type="button"
-        class="btn-contact border-gradient border-gradient-green"
-      >
+        class="btn-contact border-gradient border-gradient-green">
         Kontakta Oss
       </button>
     </header>
 
     <div class="container-contact">
-      <form action="thanks.html">
+      <div class="contact-info">
+        <h3>Kontakta oss:</h3>
+        <div class="info-colm">
+          <h2>kontakt information</h2>
+          <p>Kontakta oss om du behöver hjälp:</p>
+          <p>Telefonnummer 123-45 67 89</p>
+          <p>Adress: örebro gatan 04</p>
+          <p>Epost-adress: mr.developer@foretag.com</p>
+       </div>
+      </div>
+      <div class="row-colm">
+        <div class="column"><a href="https://instagram.com/"><img src="images/instagram.png" alt=""></a></div>
+        <div class="column"><a href="https://facebook.com/"><img src="images/facebook.png" alt=""></a></div>
+        <div class="column"><a href="https://myaccount.google.com/"><img src="images/google.png" alt=""></a></div>
+        <div class="column"><a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a></div>
+      </div>
+      <form action="tack-kontakt.html">
 
         <label for="fnamn">Förnamn</label><br>
         <input type="text" id="=fnamn" name="förnamn" placeholder="förnamn.."><br><br>
@@ -49,12 +64,14 @@
         </select><br><br>
 
         <label for="txt">Fråga</label><br>
-        <textarea id="textarea" name="text" placeholder="skriv din fråga här.."></textarea><br><br>
-
+        <textarea id="txtarea" name="text" placeholder="skriv din fråga här.."></textarea><br>
+        <div class="btn-style1">
         <input type="submit" value="Sicka">
-     
-     
+        </div>
       </form>
     </div>
+
+
+
   </body>
 </html>
