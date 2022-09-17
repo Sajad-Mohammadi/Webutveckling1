@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakta Oss</title>
 
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="kontakt.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kontakt.css" />
   </head>
   <body>
-
     <header class="header">
-      <img class="logo" src="images/logo.png" alt="logo" />
+      <img
+        class="logo"
+        src="images/logo.png"
+        alt="logo"
+        onclick="location.href='index.html';"
+      />
 
       <ul>
         <li><a href="index.html">Hem 🏠</a></li>
@@ -20,10 +24,8 @@
         <li><a href="tjanster.html">Tjänster</a></li>
       </ul>
 
-      <button
-        type="button"
-        class="btn-contact border-gradient border-gradient-green">
-        Kontakta Oss
+      <button type="button" class="btn-contact">
+        <a href="kontakt.html">Kontakta Oss</a>
       </button>
     </header>
 
@@ -36,42 +38,75 @@
           <p>Telefonnummer 123-45 67 89</p>
           <p>Adress: örebro gatan 04</p>
           <p>Epost-adress: mr.developer@foretag.com</p>
-       </div>
+        </div>
       </div>
       <div class="row-colm">
-        <div class="column"><a href="https://instagram.com/"><img src="images/instagram.png" alt=""></a></div>
-        <div class="column"><a href="https://facebook.com/"><img src="images/facebook.png" alt=""></a></div>
-        <div class="column"><a href="https://myaccount.google.com/"><img src="images/google.png" alt=""></a></div>
-        <div class="column"><a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a></div>
+        <div class="column">
+          <a href="https://instagram.com/"
+            ><img src="images/instagram.png" alt=""
+          /></a>
+        </div>
+        <div class="column">
+          <a href="https://facebook.com/"
+            ><img src="images/facebook.png" alt=""
+          /></a>
+        </div>
+        <div class="column">
+          <a href="https://myaccount.google.com/"
+            ><img src="images/google.png" alt=""
+          /></a>
+        </div>
+        <div class="column">
+          <a href="https://twitter.com/"
+            ><img src="images/twitter.png" alt=""
+          /></a>
+        </div>
       </div>
       <form action="tack-kontakt.html">
+        <label for="fnamn">Förnamn</label><br />
+        <input
+          type="text"
+          id="=fnamn"
+          name="förnamn"
+          placeholder="förnamn.."
+        /><br /><br />
 
-        <label for="fnamn">Förnamn</label><br>
-        <input type="text" id="=fnamn" name="förnamn" placeholder="förnamn.."><br><br>
+        <label for="enamn">Efternamn</label><br />
+        <input
+          type="text"
+          id="=enamn"
+          name="efternamn"
+          placeholder="efternamn.."
+        /><br /><br />
 
-        <label for="enamn">Efternamn</label><br>
-        <input type="text" id="=enamn" name="efternamn" placeholder="efternamn.."><br><br>
+        <label for="tel">Telefonnummer</label><br />
+        <input
+          type="text"
+          id="=tel"
+          name="telefonnummer"
+          placeholder="123-45 67 89"
+          pattern="[0-9]{3}-[0-9]{2} [0-9]{2} [0-9]{2}"
+        /><br /><br />
 
-        <label for="tel">Telefonnummer</label><br>
-        <input type="text" id="=tel" name="telefonnummer" placeholder="123-45 67 89" pattern="[0-9]{3}-[0-9]{2} [0-9]{2} [0-9]{2}"><br><br>
-
-        <label for="stad">Stad</label><br>
+        <label for="stad">Stad</label><br />
         <select id="stad" name="Stad">
           <option value="Eskilstuna">Eskilstuna</option>
           <option value="stockholm">Stockholm</option>
           <option value="örebro">Örebro</option>
-          <option value="uppsala">Uppsala</option>
-        </select><br><br>
+          <option value="uppsala">Uppsala</option></select
+        ><br /><br />
 
-        <label for="txt">Fråga</label><br>
-        <textarea id="txtarea" name="text" placeholder="skriv din fråga här.."></textarea><br>
+        <label for="txt">Fråga</label><br />
+        <textarea
+          id="txtarea"
+          name="text"
+          placeholder="skriv din fråga här.."
+        ></textarea
+        ><br />
         <div class="btn-style1">
-        <input type="submit" value="Sicka">
+          <input type="submit" value="Sicka" />
         </div>
       </form>
     </div>
-
-
-
   </body>
 </html>

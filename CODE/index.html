@@ -6,27 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projektarbete</title>
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap"
-    />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <header class="header">
-      <img class="logo" src="images/logo.png" alt="logo" />
+      <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html';"/>
 
       <ul>
-        <li><a href="">Hem 🏠</a></li>
-        <li><a href="">Vårt Team</a></li>
-        <li><a href="">Tjänster</a></li>
+        <li><a href="index.html">Hem 🏠</a></li>
+        <li><a href="team.html">Vårt Team</a></li>
+        <li><a href="tjanster.html">Tjänster</a></li>
       </ul>
 
-      <button type="button"
-        class="btn-contact border-gradient border-gradient-green">
+      <button type="button" class="btn-contact">
         <a href="kontakt.html">Kontakta Oss</a>
       </button>
     </header>
@@ -54,9 +47,19 @@
       </div>
 
       <div class="flex-child slide-div">
-        <div class="flex-IG">
+        <div class="slider-images">
           <img class="iphone" src="images/FB.png" alt="" />
-          <!-- <p class="find-us">Hitta oss på  fb/instagram</p> -->
+          <img class="iphone" src="images/IG.png" alt="" />
+          <img class="iphone" src="images/YT.png" alt="" />
+        </div>
+        <div class="img-controller">
+          <span class="btn-preview" onclick="controlSlide(-1)">&#10094</span>
+
+          <span class="btn-imgIndex" onclick="btnActive(1)"></span>
+          <span class="btn-imgIndex" onclick="btnActive(2)"></span>
+          <span class="btn-imgIndex" onclick="btnActive(3)"></span>
+
+          <span class="btn-preview" onclick="controlSlide(1)">&#10095</span>
         </div>
       </div>
     </container>
