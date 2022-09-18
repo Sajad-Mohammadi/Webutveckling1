@@ -1,3 +1,5 @@
+
+
 /* get cart total from session on load */
 updateCartTotal();
 
@@ -81,7 +83,7 @@ function updateCartTotal(){
             price = parseFloat(x.price.split('kr')[0]);
             productname = x.productname;
             //add price to total
-            carttable += "<tr><td>" + productname + price.toFixed(2) + "</td><td>kr" + "</td></tr>";
+            carttable += "<tr><td>" + productname + "</td><td>" + price.toFixed(2) + "</td><td>kr" + "</td></tr>";
             total += price;
         }
         
