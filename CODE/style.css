@@ -82,14 +82,14 @@ header a {
 
 /*--------------------------------container 1--------------------------------*/
 
-.flex-container {
+.flex-div {
   display: flex;
   background: #fcfcfc;
   background: linear-gradient(
     0deg,
     rgba(153, 238, 255, 0) 5%,
-    rgba(153, 238, 255, 1) 41%,
-    rgba(189, 255, 235, 1) 100%
+    rgba(189, 255, 235, 1) 41%,
+    rgb(222, 255, 145) 100%
   );
 }
 
@@ -165,4 +165,17 @@ header a {
   transition: 0.6s;
 }
 
-/*--------------------------------container 1--------------------------------*/
+/*--------------------------------about us--------------------------------*/
+.about-us {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.www-img {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
