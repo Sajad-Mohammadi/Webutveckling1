@@ -1,6 +1,25 @@
+// -----------------------------ladda sidan---------------------------------
+loadPage();
+function loadPage() {
+    document.body.style.opacity="100";
+}
+
+
+// -----------------------------slideshow-----------------------------------
+function activePage(n) {
+    let index;
+    const links = document.getElementsByClassName("link");
+
+    for (index = 0; index < links.length; index++) {
+        links[index].className = links[index].className.replace(" active-page", "");
+    }
+    
+    links[n - 1].className += " active-page";
+}
+
+
 // -----------------------------slideshow-----------------------------------
 let imgIndex = 1;
-showImg(imgIndex);
 
 function showImg(n) {
     let index;
@@ -18,15 +37,11 @@ function showImg(n) {
     }
 
     for (index = 0; index < btnImgIndex.length; index++) {
-        btnImgIndex[index].className = btnImgIndex[index].className.replace(" active", "");
-    }
-
-    for (index = 0; index < btnImgIndex.length; index++) {
-        btnImgIndex[index].className = btnImgIndex[index].className.replace(" active", "");
+        btnImgIndex[index].className = btnImgIndex[index].className.replace(" active-btn", "");
     }
 
     imgs[imgIndex - 1].style.display = "block";
-    btnImgIndex[imgIndex - 1].className += " active";
+    btnImgIndex[imgIndex - 1].className += " active-btn";
 }
 
 function controlSlide(n) {

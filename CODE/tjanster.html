@@ -7,9 +7,10 @@
     <title>Projektarbete</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tjanster.css" />
+    <script src="script.js" defer></script>
   </head>
 
-  <body>
+  <body onload="activePage(3)">
     <header class="header">
       <img
         class="logo"
@@ -19,9 +20,9 @@
       />
 
       <ul>
-        <li><a href="index.html">Hem 🏠</a></li>
-        <li><a href="team.html">Vårt Team</a></li>
-        <li><a href="tjanster.html">Tjänster</a></li>
+        <li><a class="link" href="index.html">Hem 🏠</a></li>
+        <li><a class="link" href="team.html">Vårt Team</a></li>
+        <li><a class="link" href="tjanster.html">Tjänster</a></li>
       </ul>
 
       <button type="button" class="btn-contact">
@@ -91,8 +92,8 @@
           <div class="cart-buttons">
             <button id="emptycart">Tom vagn</button>
             <form action="tack-tjanst.html">
-            <button id="checkout">Betala</button>
-          </form>
+              <button id="checkout">Betala</button>
+            </form>
           </div>
         </div>
       </div>
