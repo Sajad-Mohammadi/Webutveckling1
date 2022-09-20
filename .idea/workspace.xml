@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -33,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/masih/Desktop/web_system/LK4/style.css",
+    "last_opened_file_path": "C:/Users/masih/WebstormProjects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +52,10 @@
       <updated>1662989118432</updated>
       <workItem from="1662989120034" duration="4000" />
       <workItem from="1663054947689" duration="4831000" />
+      <workItem from="1663145145707" duration="8000" />
+      <workItem from="1663145538036" duration="65000" />
+      <workItem from="1663145927135" duration="131000" />
+      <workItem from="1663146063952" duration="138000" />
     </task>
     <servers />
   </component>
