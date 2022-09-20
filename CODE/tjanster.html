@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projektarbete</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tjanster.css" />
     <script src="script.js" defer></script>
+    <script src="tjanster.js"></script>
   </head>
 
   <body onload="activePage(3)">
@@ -20,9 +22,15 @@
       />
 
       <ul>
-        <li><a class="link" href="index.html">Hem 🏠</a></li>
-        <li><a class="link" href="team.html">Vårt Team</a></li>
-        <li><a class="link" href="tjanster.html">Tjänster</a></li>
+        <li><a class="link" href="index.html">Hem <span class="material-symbols-outlined">
+          home
+          </span></a></li>
+        <li><a class="link" href="team.html">Vårt Team <span class="material-symbols-outlined">
+          diversity_3
+          </span></a></li>
+        <li><a class="link" href="tjanster.html">Tjänster <span class="material-symbols-outlined">
+          add_shopping_cart
+          </span></a></li>
       </ul>
 
       <button type="button" class="btn-contact">
@@ -30,74 +38,8 @@
       </button>
     </header>
 
-    <main>
-      <div class="container">
-        <h1>Tjanster</h1>
 
-        <div id="alerts"></div>
-        <div class="productcont">
-          <div class="product">
-            <h3 class="productname">korrigerande Underhåll</h3>
-            <p>
-              Våra korrigerande underhållstjänster hjälper till att rätta till
-              design-, logik- och kodningsfel som rapporteras medan programvaran
-              används.
-            </p>
-            <p class="price">3999kr</p>
-            <button class="addtocart">Lägg till vagn</button>
-          </div>
-          <div class="product">
-            <h3 class="productname">Perfektiv Underhåll</h3>
-            <p>
-              Vi är ett stegt fram, vi hjälper användare med underhållstjänsten
-              att hitta och korrigera potentiella problem i realtid.
-            </p>
-            <p class="price">2999kr</p>
-            <button class="addtocart">Lägg till vagn</button>
-          </div>
-          <div class="product">
-            <h3 class="productname">Adaptiv Underhåll</h3>
-            <p>
-              Vi hjälper mjukvarusystem att anpassas att vara uppdateras hela
-              tiden genom att uppdatera deras mjukvara, operativsystem osv.
-            </p>
-            <p class="price">1999kr</p>
-            <button class="addtocart">Lägg till vagn</button>
-          </div>
-        </div>
-        <div class="cart-container">
-          <h2>Vagn</h2>
-          <table>
-            <thead>
-              <tr>
-                <th><strong>Tjänst</strong></th>
-                <th><strong>Pris</strong></th>
-              </tr>
-            </thead>
-            <tbody id="carttable"></tbody>
-          </table>
-          <hr />
-          <table id="carttotals">
-            <tr>
-              <td><strong>Styck</strong></td>
-              <td><strong>Total</strong></td>
-            </tr>
-            <tr>
-              <td>st <span id="itemsquantity">0</span></td>
+   
 
-              <td><span id="total">0</span>kr</td>
-            </tr>
-          </table>
-
-          <div class="cart-buttons">
-            <button id="emptycart">Tom vagn</button>
-            <form action="tack-tjanst.html">
-              <button id="checkout">Betala</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script src="tjanster.js"></script>
   </body>
 </html>
