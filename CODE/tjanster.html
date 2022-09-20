@@ -38,8 +38,80 @@
       </button>
     </header>
 
+    <script src = "https://unpkg.com/vue@3"></script>
 
-   
+
+    <div id="app">
+    <div class="container">
+      <h1>Tjanster</h1>
+     <main>
+      <div id="alerts"></div>
+      <div class="productcont">
+        <div class="product">
+          <h3 class="productname">korrigerande Underhåll</h3>
+          <p>
+            Våra korrigerande underhållstjänster hjälper till att rätta till
+            design-, logik- och kodningsfel som rapporteras medan programvaran
+            används.
+          </p>
+          <p class="price">3999kr</p>
+          <button @click="total += 1.999, counter +=1">Lägg till vagn</button>
+        </div>
+        <div class="product">
+          <h3 class="productname">Perfektiv Underhåll</h3>
+          <p>
+            Vi är ett stegt fram, vi hjälper användare med underhållstjänsten
+            att hitta och korrigera potentiella problem i realtid.
+          </p>
+          <p class="price">2999kr</p>
+          <button @click="total += 2.999, counter +=1">Lägg till vagn</button>
+        </div>
+        <div class="product">
+          <h3 class="productname">Adaptiv Underhåll</h3>
+          <p>
+            Vi hjälper mjukvarusystem att anpassas att vara uppdateras hela
+            tiden genom att uppdatera deras mjukvara, operativsystem osv.
+          </p>
+          <p class="price">1999kr</p>
+          <button @click="total += 1.999, counter +=1">Lägg till vagn</button>
+        </div>
+      </div>
+      <div class="cart-container">
+        <h2>Vagn</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Tjänst</strong></th>
+              <th><strong>Pris</strong></th>
+            </tr>
+          </thead>
+          <tbody id="carttable"></tbody>
+        </table>
+        <table id="carttotals">
+          <tr>
+            <td><strong>Styck</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>st<span id="itemsquantity">{{counter}}</span></td>
+
+            <td><span id="total">{{total}}</span>kr</td>
+          </tr>
+        </table>
+
+        <div class="cart-buttons">
+          <button id="emptycart">Tom vagn</button>
+          <form action="tack-tjanst.html">
+            <button id="checkout">Betala</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <script src="tjanster.js"></script>
+
+</main>
+</div>
 
   </body>
 </html>
