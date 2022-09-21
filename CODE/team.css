@@ -4,18 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Inconsolata", monospace;
 }
 
-body{
-    background: #fcfcfc;
-    background: linear-gradient(
-            0deg,
-            rgba(153, 238, 255, 0) 5%,
-            rgba(189, 255, 235, 1) 41%,
-            rgb(222, 255, 145) 100%
-    );
-}
 
 .wrapper{
     margin-top: 60px;
@@ -68,7 +59,7 @@ body{
     margin: 15px 0 0px;
 }
 
-.wrapper .our_team .team_member span{
+.wrapper .our_team .team_member .roll{
     font-size: 10px;
 }
 
@@ -104,4 +95,13 @@ body{
 
 .wrapper .our_team .team_member .member_img:hover .social_media{
     transform: scale(1);
+}
+
+#link-icon{
+    width: 30px;
+    border-radius: 80%;
+}
+.more_info{
+    text-decoration: none;
+
 }
