@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*bakgrund för själva sidan*/
+body {
+    background: rgb(153, 238, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(153, 238, 255, 0) 5%,
+      rgba(153, 238, 255, 1) 41%,
+      rgba(189, 255, 235, 1) 100%
+    );
+    background-repeat: no-repeat;
+    
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+h2 {
+    color: black;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+}
+
+h3 {
+
+    color: black;
+    font-size: 4rem;
+    font-weight: 400 rem;
+}
+
+.image {
+    width: 400px;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    border-radius: 300px;
+    height: 400px;
+}
+
+p {
+    font-size: 2rem;
+    color: black;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2rem 2rem;
+    background-color:blanchedalmond;
+    font-size: 1rem;
+    text-decoration: none;
+    color: grey;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgb(107, 197, 197);
+    color: black;
+}
+
+/* css för skills funktionen*/
+
+.bar {
+    background-color: lightgrey;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.bar-inner {
+    background-color: blue;
+    width: 90%;
+    height: 100%;
+    
+}
