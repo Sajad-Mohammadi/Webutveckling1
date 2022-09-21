@@ -2,13 +2,6 @@
   padding: 20px;
   font-size: 18px;
   color: #095b40;
-  background: #fcfcfc;
-  background: linear-gradient(
-    0deg,
-    rgba(153, 238, 255, 0) 5%,
-    rgba(189, 255, 235, 1) 41%,
-    rgb(222, 255, 145) 100%
-  );
 }
 
 textarea {
