@@ -101,7 +101,14 @@
     width: 30px;
     border-radius: 80%;
 }
+
 .more_info{
     text-decoration: none;
+}
 
+.more_info:hover {
+    padding: 5px 0;
+    border-bottom: 2px solid #13dd9a;
+    transition: 0.3s;
+    text-decoration: none;
 }
