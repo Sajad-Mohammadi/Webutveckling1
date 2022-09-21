@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     
     font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
     
 }
 
@@ -25,11 +26,12 @@ body {
     margin: 0 auto;
     padding: 0 3rem;
     margin-top: 4rem;
-    text-align: center;
+    
 }
 
 .container p {
     font-size: 18px;
+    text-align: center;
 }
 
 h2 {
@@ -38,6 +40,7 @@ h2 {
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 2rem;
+    margin-left: 15rem;
 }
 
 h3 {
@@ -45,6 +48,7 @@ h3 {
     color: black;
     font-size: 3rem;
     font-weight: 400 rem;
+    margin-left: 16rem;
 }
 
 .image {
