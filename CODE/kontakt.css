@@ -11,7 +11,7 @@ textarea {
   height: 200px;
   padding: 10px;
   background: none;
-  border: 2px solid #3b9abd;
+  border: 2px solid #fb0606;
   border-radius: 15px 50px;
 }
 
@@ -20,7 +20,7 @@ textarea {
   height: 25px;
   padding-left: 10px;
   background: none;
-  border: 2px solid #3b9abd;
+  border: 2px solid #fb0606;
   border-radius: 15px 50px;
 }
 
@@ -29,7 +29,7 @@ select {
   height: 30px;
   padding-left: 10px;
   background: none;
-  border: 2px solid #3b9abd;
+  border: 2px solid #fb0606;
   border-radius: 15px 50px;
 }
 
@@ -39,12 +39,12 @@ select {
   margin-top: 3px;
   font-size: 15px;
   background: none;
-  border: 2px solid #3b9abd;
+  border: 2px solid #fb0606;
   border-radius: 15px 50px;
 }
 
 .btn-style1 input[type="submit"]:hover {
-  background-color: #3b9abd;
+  background-color: #fb0606;
 }
 
 .contact-info {
@@ -53,13 +53,13 @@ select {
 
 .info-colm {
   position: absolute;
-  right: 200px;
+  right: 100px;
   top: 10px;
   max-width: 500px;
   font-size: 15px;
   background: none;
   padding: 30px;
-  border: 2px solid #3b9abd;
+  border: 2px solid #fb0606;
   border-radius: 15px 50px;
 }
 
@@ -67,12 +67,13 @@ select {
   float: right;
   width: 100px;
   height: 100px;
-  border: 2px solid #3b9abd;
+  border: 2px solid #fb0606;
   border-radius: 15px 50px;
   padding: 10px;
   margin: 10px;
-  margin-top: 350px;
+  margin-top: 300px;
   margin-right: 50px;
+  background-color: black;
 }
 
 .column img {
