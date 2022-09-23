@@ -1,7 +1,9 @@
 .container-contact {
+  margin-top: 90px;
   padding: 20px;
   font-size: 18px;
   color: #095b40;
+  min-height: 100vh;
 }
 
 textarea {
