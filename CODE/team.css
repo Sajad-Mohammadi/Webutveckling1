@@ -55,7 +55,7 @@
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px;
-  margin: 15px 0 0px;
+  margin: 15px 0 0;
 }
 
 .wrapper .our_team .team_member .roll {
@@ -96,13 +96,14 @@
   transform: scale(1);
 }
 
-#link-icon {
-  width: 30px;
+.link-icon {
+  max-width: 30px;
   border-radius: 80%;
 }
 
 .more_info {
   text-decoration: none;
+  size: 20px;
 }
 
 .more_info:hover {
