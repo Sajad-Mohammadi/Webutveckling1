@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tjanster.css" />
     <script src="script.js" defer></script>
@@ -108,7 +109,7 @@
 
           <div v-for="(product, i)  in inventory.slice(0,3)" :key="product.id" class="card">
             <div class="card-title">
-              {{  product.name }}
+              {{  product.name }} 
             </div>
             <div class="card-body">
               <i class="icofont-10x icofont-{{ product.img }}"></i>

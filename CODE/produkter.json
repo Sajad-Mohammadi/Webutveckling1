@@ -1,6 +1,6 @@
 [
-  { "id": 1,  "name": "On-demand",   "img":"images/icon1.png", "price": { "kr": 1999 }, "type": "underhåll" },
-  { "id": 2,  "name": "Maintenance",  "img": "images/icon2.png",  "price": { "kr": 2999 }, "type": "underhåll" },
-  { "id": 3,  "name": "Full-stack",    "img": "images/icon3.png",   "price": { "kr": 3999}, "type": "underhåll" }
+  { "id": 1,  "name": "On-demand ",   "img":"images/icon1.png", "price": { "kr": 1999 }, "type": "underhåll" },
+  { "id": 2,  "name": "Maintenance ",  "img": "images/icon2.png",  "price": { "kr": 2999 }, "type": "underhåll" },
+  { "id": 3,  "name": "Full-stack ",    "img": "images/icon3.png",   "price": { "kr": 3999}, "type": "underhåll" }
 
 ]
