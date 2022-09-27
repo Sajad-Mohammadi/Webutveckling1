@@ -12,7 +12,7 @@ textarea {
   padding: 10px;
   background: none;
   border: 2px solid #fb0606;
-  border-radius: 10
+  border-radius: 10px;
 }
 
 .container-contact input[type="text"] {
@@ -79,9 +79,13 @@ select {
 .column img {
   width: 100px;
   height: 100px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .column img:hover {
   opacity: 0.3;
+}
+
+input:invalid {
+  border: 3px dashed red;
 }

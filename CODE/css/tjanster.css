@@ -8,7 +8,7 @@ padding: 40px;
   width: 50%;
   margin: 10px;
   border: 2px solid #fe0606;
-  border-radius: 15px 50px;
+  border-radius: 10px;
 }
 
 .spread{
@@ -117,8 +117,11 @@ position: relative;
     .top-bar-cart-link
       {
           display: inline-block;
-          padding:15px 19px;
+          padding:5px 10px;
           font-size:17px;
+          border: 1px solid #fa0606;
+          border-radius: 10px;
+          background-color: #f7dede;
       }
 
       * {
@@ -132,7 +135,7 @@ position: relative;
         height: 300px;
         text-align: center;
         border: 2px solid #fa0606;
-        border-radius: 15px 50px;
+        border-radius: 10px;
         margin: 5px 10px;
         text-align: center;
         
