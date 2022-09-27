@@ -5,13 +5,13 @@
 
   <head>
     <title>Tjänster</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/tjanster.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tjanster.css">
     <script src="js/script.js" defer></script>
   </head>
 
@@ -21,8 +21,7 @@
         class="logo"
         src="images/logo.png"
         alt="logo"
-        onclick="location.href='index.html';"
-      />
+        onclick="location.href='index.html';">
       <ul>
         <li><a class="link" href="index.html">Hem <span class="material-symbols-outlined">
           home
@@ -154,8 +153,7 @@
  :toggle="toggleSidebar"
  :cart="cart"
  :inventory="inventory"
- :remove="removeItem"
- />
+ :remove="removeItem">
       <footer>
       </footer>
 
@@ -168,10 +166,10 @@
 
     <script src="https://unpkg.com/vue@next"></script>
     <script>
-      let app = Vue.createApp({
+      const app = Vue.createApp({
         data() {
           return {
-            showSidebar: false,
+            showSidebar: true,
             inventory: [],
             cart: { }
           }
@@ -198,7 +196,7 @@
           }
         },
         async mounted() {
-          const res = await fetch('./produkter.json')
+          const res = await fetch('js/produkter.json')
           const data = await res.json()
           this.inventory = data
         },
