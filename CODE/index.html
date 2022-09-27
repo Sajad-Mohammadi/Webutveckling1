@@ -15,19 +15,19 @@
 </head>
 
 <body onload="showImg(1),activePage(1)">
-  <header>
 
+  <header>
     <div class="header">
       <div class="d-mobile">
         <div>
           <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html'" />
         </div>
         <div class="menu-bar">
-          <span class="material-symbols-outlined">Menu</span>
+          <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
         </div>
       </div>
       <div class="nav-link">
-        <ul>
+        <ul id="linkList" class="link-List d-none">
           <li><a class="link" href="index.html">
               <i class="mdi mdi-home"></i>
               home
@@ -54,8 +54,8 @@
         <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
       </div>
     </div>
-
   </header>
+
   <div class="main">
     <div class="flex-div">
       <div class="flex-child">

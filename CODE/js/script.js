@@ -17,6 +17,16 @@ function activePage(n) {
     links[n - 1].className += " active-page";
 }
 
+// -----------------------------mune-----------------------------------
+function responsiveMenu() {
+    let list = document.getElementById("linkList");
+
+    if (list.className === "link-List d-none") {
+        list.className =list.className.replace(" d-none", " d-block");
+    } else {
+        list.className =list.className.replace(" d-block", " d-none");
+    }
+}
 
 // -----------------------------slideshow-----------------------------------
 let imgIndex = 1;
