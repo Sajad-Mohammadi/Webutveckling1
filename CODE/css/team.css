@@ -103,9 +103,10 @@
 
 .more_info {
   text-decoration: none;
+  margin-top: 15px;
 }
 
-.more_info:hover {
+.more_info:hover a{
   padding: 5px 0;
   border-bottom: 2px solid #13dd9a;
   transition: 0.3s;
