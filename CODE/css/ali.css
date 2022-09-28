@@ -1,0 +1,71 @@
+/*-------------------------------html---------------------------------*/
+.html-bar {
+  width: 70%;
+}
+
+.html-anim {
+  animation-name: html;
+}
+
+@keyframes html {
+  0% {
+    width: 70%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/*-------------------------------css---------------------------------*/
+.css-bar {
+  width: 65%;
+}
+
+.css-anim {
+  animation-name: css;
+}
+
+@keyframes css {
+  0% {
+    width: 65%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/*-------------------------------css---------------------------------*/
+.js-bar {
+  width: 85%;
+}
+
+.js-anim {
+  animation-name: js;
+}
+
+@keyframes js {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/*-------------------------------css---------------------------------*/
+.vue-bar {
+  width: 75%;
+}
+
+.vue-anim {
+  animation-name: vue;
+}
+
+@keyframes vue {
+  0% {
+    width: 75%;
+  }
+  100% {
+    width: 0%;
+  }
+}
