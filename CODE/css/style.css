@@ -147,7 +147,6 @@ a:visited {
 .btn-read-more:hover {
   background-color: #dd2a1d;
   color: #fff;
-  transition: 0.3s;
 }
 
 /*--------------------------------phone--------------------------------*/
@@ -194,8 +193,6 @@ a:visited {
   transition: 0.6s;
 }
 
-/*--------------------------------section--------------------------------*/
-
 .section {
   margin: 0 auto;
   padding: 2rem;
@@ -205,7 +202,7 @@ a:visited {
   align-items: center;
 }
 
-/*-------------client--------------*/
+/*--------------------------------client--------------------------------*/
 .clients {
   text-align: center;
   background-color: #fff;
