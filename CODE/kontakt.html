@@ -6,67 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
 
     <title>Kontakta Oss</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/kontakt.css">
     <script src="js/script.js" defer></script>
-    <script src="kantakt.js" ></script>
   </head>
-  <body>
-    <header class="header">
-      <img
-        class="logo"
-        src="images/logo.png"
-        alt="logo"
-        onclick="location.href='index.html'">
-
-      <ul>
-        <li><a class="link" href="index.html">Hem <span class="material-symbols-outlined">
-          home
-          </span></a></li>
-        <li><a class="link" href="team.html">Vårt Team <span class="material-symbols-outlined">
-          diversity_3
-          </span></a></li>
-        <li><a class="link" href="tjanster.html">Tjänster <span class="material-symbols-outlined">
-          add_shopping_cart
-          </span></a></li>
-      </ul>
-
-      <form action="kontakt.html">
-        <button type="submit" class="btn-contact">Kontakta Oss</button>
-      </form>
+  <body onload="activePage(4)">
+    <header>
+      <div class="header">
+        <div class="d-mobile">
+          <div>
+            <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html'">
+          </div>
+          <div class="menu-bar">
+            <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
+          </div>
+        </div>
+        <div class="nav-link">
+          <ul id="linkList" class="link-List d-none">
+            <li><a class="link" href="index.html">
+                <i class="mdi mdi-home"></i>
+                home
+                </a></li>
+            <li>
+              <a class="link" href="team.html">
+                <i class="mdi mdi-account-group "></i>
+                Vårt Team
+                </a>
+            </li>
+            <li>
+              <a class="link" href="tjanster.html">
+                <i class="mdi mdi-cart-plus "></i>
+                Tjänster
+               </a>
+            </li>
+            <li>
+            <div class="nav-link-btn d-block-mobile">
+              <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+            </div>
+          </li>
+          </ul>
+  
+        </div>
+        <div class="nav-link-btn d-block-pc">
+          <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+        </div>
+      </div>
     </header>
 
     <div class="container-contact">
-      <div class="contact-info">
+
         <div class="info-colm">
           <h2>kontakt information</h2>
-          <p>Kontakta oss om du behöver hjälp:</p>
-          <p>Telefonnummer 123-45 67 89</p>
-          <p>Adress: örebro gatan 04</p>
-          <p>Epost-adress: mr.developer@foretag.com</p>
+          <blockquote>
+          Kontakta oss om du behöver hjälp:
+          Telefonnummer 123-45 67 89<br>
+          Adress: örebro gatan 04<br>
+          Epost-adress: mr.developer@foretag.com
+        </blockquote>
         </div>
-      </div>
-      <div class="row-colm">
-        <div class="column">
-          <a href="https://instagram.com/"
-            ><img src="images/instagram.png" alt=""></a>
-        </div>
-        <div class="column">
-          <a href="https://facebook.com/"
-            ><img src="images/facebook.png" alt=""></a>
-        </div>
-        <div class="column">
-          <a href="https://myaccount.google.com/"
-            ><img src="images/google.png" alt=""></a>
-        </div>
-        <div class="column">
-          <a href="https://twitter.com/"
-            ><img src="images/twitter.png" alt=""></a>
-        </div>
-      </div>
+
+
       <form action="tack-kontakt.html">
         <label for="fnamn">Förnamn</label><br>
         <input

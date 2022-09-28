@@ -1,71 +1,88 @@
 <!DOCTYPE html>
-
-
 <html lang="sv">
-
   <head>
-    <title>Tjänster</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <title>Tjänster</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tjanster.css">
     <script src="js/script.js" defer></script>
+
+
   </head>
-
   <body onload="activePage(3)">
-    <header class="header">
-      <img
-        class="logo"
-        src="images/logo.png"
-        alt="logo"
-        onclick="location.href='index.html';">
-      <ul>
-        <li><a class="link" href="index.html">Hem <span class="material-symbols-outlined">
-          home
-          </span></a></li>
-        <li><a class="link" href="team.html">Vårt Team <span class="material-symbols-outlined">
-          diversity_3
-          </span></a></li>
-        <li><a class="link" href="tjanster.html">Tjänster <span class="material-symbols-outlined">
-          add_shopping_cart
-          </span></a></li>
-      </ul>
-
-      <form action="kontakt.html">
-        <button type="submit" class="btn-contact">Kontakta Oss</button>
-      </form>
+    <header>
+      <div class="header">
+        <div class="d-mobile">
+          <div>
+            <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html'">
+          </div>
+          <div class="menu-bar">
+            <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
+          </div>
+        </div>
+        <div class="nav-link">
+          <ul id="linkList" class="link-List d-none">
+            <li><a class="link" href="index.html">
+                <i class="mdi mdi-home"></i>
+                home
+                </a></li>
+            <li>
+              <a class="link" href="team.html">
+                <i class="mdi mdi-account-group "></i>
+                Vårt Team
+                </a>
+            </li>
+            <li>
+              <a class="link" href="tjanster.html">
+                <i class="mdi mdi-cart-plus "></i>
+                Tjänster
+               </a>
+            </li>
+            <li>
+            <div class="nav-link-btn d-block-mobile">
+              <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+            </div>
+          </li>
+          </ul>
+  
+        </div>
+        <div class="nav-link-btn d-block-pc">
+          <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+        </div>
+      </div>
     </header>
 
   
     <div id="app">
 
-      <header class="top-bar spread">
+      <div class="top-bar spread">
         <a @click="toggleSidebar" class="top-bar-cart-link">
           <i class="icofont-cart-alt icofont-1x"></i>
           <span class="material-symbols-outlined">
             shopping_cart
             </span> <span>Vagn ({{totalQuantity}})</span>
         </a>
-      </header>
+      </div>
 
 
       <main class="wrapper1">
 
-        <h1>Services</h1>
-
-        <h3>Why should you partner with Mr. Developer?</h3>
-        <img class bild-tjanst src="images/img123.png" alt="">
+        <h2>Services</h2>
+       
         <blockquote>
-          <h3>
           At Mr. Developer, we have the experience and staying power
            youre looking for in a web development partner. 
            Unlike others, we dont just say, we deliver. We help you delight 
            your customers at each touchpoint with a uniform digital experience.
            We deliver powerful products using the right mix of front and back-end technologies.
-          </h3>
         </blockquote>
         <br>
 
@@ -74,10 +91,14 @@
             <img src="images/icon2.png" alt="">
           <h2>On-demand Teams</h2>
           <blockquote>
-            Our on-demand teams are instantly available to cater
-            to the ad-hoc demands of businesses. 
-            We provide highly talented developers that
-             follow best coding practices and established methodologies.
+            Our on-demand teams are
+             instantly available to cater
+            to the ad-hoc demands
+             of businesses. 
+            We provide highly 
+            talented developers that
+             follow best coding practices
+              and established methodologies.
           </blockquote>
           </div>
           <div class="center1">
@@ -87,7 +108,7 @@
             Our maintenance & support teams provide comprehensive
                support for your product and have expertise in taking your 
                product through a series of stable releases
-                by adding new functionalities.
+                by adding new functionalities. We help you with everthing you need.
           </blockquote>
           </div>
           <div class="right1">
@@ -100,7 +121,7 @@
               flexible to work according to your changing priorities.
           </blockquote>
           </div>
-          </div>
+         
 
      
 
@@ -146,6 +167,7 @@
             </div>
           </div>
         </div>
+      </div>
       </main>
 
  <sidebar
@@ -156,15 +178,9 @@
  :remove="removeItem">
       <footer>
       </footer>
-
     </div>
 
-
-
-
-
-
-    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <script>
       const app = Vue.createApp({
         data() {
