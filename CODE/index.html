@@ -1,122 +1,157 @@
 <!DOCTYPE html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+      integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projektarbete</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
 
-  <title>Projektarbete</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/script.js" defer></script>
-</head>
-
-<body onload="showImg(1),activePage(1)">
-
-  <header>
-    <div class="header">
-      <div class="d-mobile">
-        <div>
-          <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html'" />
-        </div>
-        <div class="menu-bar">
-          <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
-        </div>
-      </div>
-      <div class="nav-link">
-        <ul id="linkList" class="link-List d-none">
-          <li><a class="link" href="index.html">
-              <i class="mdi mdi-home"></i>
-              home</a></li>
-          <li>
-            <a class="link" href="team.html">
-              <i class="mdi mdi-account-group "></i>
-              Vårt Team
-              </span></a>
-          </li>
-          <li>
-            <a class="link" href="tjanster.html">
-              <i class="mdi mdi-cart-plus "></i>
-              Tjänster
-              </span></a>
-          </li>
-          <div class="nav-link-btn d-block-mobile">
-            <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+  <body onload="showImg(1),activePage(1)">
+    <header>
+      <div class="header">
+        <div class="d-mobile">
+          <div>
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="logo"
+              onclick="location.href='index.html'"
+            />
           </div>
-        </ul>
-
+          <div class="menu-bar">
+            <a class="material-symbols-outlined" onclick="responsiveMenu()"
+              >Menu</a
+            >
+          </div>
+        </div>
+        <div class="nav-link">
+          <ul id="linkList" class="link-List d-none">
+            <li>
+              <a class="link" href="index.html">
+                <i class="mdi mdi-home"></i>
+                home</a
+              >
+            </li>
+            <li>
+              <a class="link" href="team.html">
+                <i class="mdi mdi-account-group"></i>
+                Vårt Team</a
+              >
+            </li>
+            <li>
+              <a class="link" href="tjanster.html">
+                <i class="mdi mdi-cart-plus"></i>
+                Tjänster</a
+              >
+            </li>
+            <li>
+              <div class="nav-link-btn d-block-mobile">
+                <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-link-btn d-block-pc">
+          <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+        </div>
       </div>
-      <div class="nav-link-btn d-block-pc">
-        <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+    </header>
+
+    <div class="main">
+      <div class="flex-div">
+        <div class="flex-child">
+          <div class="welcome-text">
+            <p>Mr. Developer</p>
+            <p>hälsar dig välkommen!</p>
+          </div>
+          <div class="short-description">
+            <p>
+              Hur man designar en webbplats, dess steg, var och hur man börjar,
+              samt villkoren för webbdesign och dess kostnader är bland de saker
+              som bör övervägas. Men vi har ett simple svar
+            </p>
+            <button
+              type="button"
+              class="btn-read-more"
+              onclick="location.href='#about-us'"
+            >
+              läs mer
+            </button>
+          </div>
+        </div>
+        <div class="flex-child">
+          <div class="slider-div">
+            <div class="slider-images">
+              <img class="iphone" src="images/YT.png" alt="" />
+              <img class="iphone" src="images/FB.png" alt="" />
+              <img class="iphone" src="images/IG.png" alt="" />
+            </div>
+            <div class="img-controller">
+              <span class="btn-preview" onclick="controlSlide(-1)"
+                >&#10094;</span
+              >
+
+              <span class="btn-imgIndex" onclick="btnActive(1)"></span>
+              <span class="btn-imgIndex" onclick="btnActive(2)"></span>
+              <span class="btn-imgIndex" onclick="btnActive(3)"></span>
+
+              <span class="btn-next" onclick="controlSlide(1)">&#10095;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="clients">
+          <p>Några av våra kunder som du säkert känner till:</p>
+          <div class="all-clients">
+            <img class="client-icon" src="images/kund/twitter.png" alt="" />
+            <img class="client-icon" src="images/kund/oru.png" alt="" />
+            <img class="client-icon" src="images/kund/google.png" alt="" />
+            <img class="client-icon" src="images/kund/SL.png" alt="" />
+            <img class="client-icon" src="images/kund/nvidia.svg.png" alt="" />
+            <img class="client-icon" src="images/kund/SwedBank.png" alt="" />
+          </div>
+        </div>
+        <div id="about-us" class="about-us">
+          <!-- <img class="www-img" src="images/using-www.png" alt=""> -->
+          <div>
+            <h3 class="about-us-title">
+              Ett webbutvecklingsteam kan på egen hand förändra ditt företag
+            </h3>
+            <div class="about-us-text">
+              In the age of interconnectivity, web development services are
+              inevitably on the rise. Businesses of all shapes and sizes are
+              putting their best efforts into maximizing the quality of their
+              online presence, frequently by outsourcing IT services or
+              augmenting their in-house IT staff with expert engineers. However,
+              web development covers a massive range of solutions, most of which
+              are customized to the client’s needs. Depending on the project’s
+              requirements, they can include solutions like web application
+              development, cybersecurity, testing, maintenance, consultancy, and
+              even UI/UX design. That means that a senior web development team
+              can completely reimagine your business and provide you a
+              competitive edge in today’s business landscape.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
-
-  <div class="main">
-    <div class="flex-div">
-      <div class="flex-child">
-        <div class="welcome-text">
-          <p>Mr. Developer</p>
-          <p>hälsar dig välkommen!</p>
-        </div>
-        <div class="short-description">
-          <p>Hur man designar en webbplats, dess steg, var och hur man börjar, samt villkoren för webbdesign och dess kostnader är bland de saker som bör övervägas. Men vi har ett simple svar</p>
-          <button type="button" class="btn-read-more" onclick="location.href='#about-us'">läs mer</button>
-        </div>
-      </div>
-      <div class="flex-child">
-        <div class="slider-div">
-          <div class="slider-images">
-            <img class="iphone" src="images/YT.png" alt="" />
-            <img class="iphone" src="images/FB.png" alt="" />
-            <img class="iphone" src="images/IG.png" alt="" />
-          </div>
-          <div class="img-controller">
-            <span class="btn-preview" onclick="controlSlide(-1)">&#10094</span>
-
-            <span class="btn-imgIndex" onclick="btnActive(1)"></span>
-            <span class="btn-imgIndex" onclick="btnActive(2)"></span>
-            <span class="btn-imgIndex" onclick="btnActive(3)"></span>
-
-            <span class="btn-next" onclick="controlSlide(1)">&#10095</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="clients">
-        <p>Några av våra kunder som du säkert känner till:</p>
-        <div class="all-clients">
-          <img class="client-icon" src="images/kund/twitter.png" alt="" />
-          <img class="client-icon" src="images/kund/oru.png" alt="" />
-          <img class="client-icon" src="images/kund/google.png" alt="" />
-          <img class="client-icon" src="images/kund/SL.png" alt="" />
-          <img class="client-icon" src="images/kund/nvidia.svg.png" alt="" />
-          <img class="client-icon" src="images/kund/SwedBank.png" alt="" />
-        </div>
-      </div>
-      <div id="about-us" class="about-us">
-        <!-- <img class="www-img" src="images/using-www.png" alt=""> -->
-        <div>
-          <h3 class="about-us-title">Ett webbutvecklingsteam kan på egen hand förändra ditt företag</h3>
-          <div class="about-us-text">
-            In the age of interconnectivity, web development services are inevitably on the rise. Businesses of all
-            shapes and sizes are putting their best efforts into maximizing the quality of their online presence,
-            frequently by outsourcing IT services or augmenting their in-house IT staff with expert engineers. However,
-            web development covers a massive range of solutions, most of which are customized to the client’s needs.
-            Depending on the project’s requirements, they can include solutions like web application development,
-            cybersecurity, testing, maintenance, consultancy, and even UI/UX design. That means that a senior web
-            development team can completely reimagine your business and provide you a competitive edge in today’s
-            business landscape.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>© MR. DEVELOPER - 2028</footer>
-</body>
-
+    <footer>© MR. DEVELOPER - 2028</footer>
+  </body>
 </html>

@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+      integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dawit</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/member.css" />
+    <link rel="stylesheet" href="../css/dawit.css" />
+    <script src="../js/script.js" defer></script>
+    <script src="../js/skillsbar.js" defer></script>
+  </head>
 
-
-  <title>Dawit</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/member.css" />
-  <link rel="stylesheet" href="../css/dawit.css" />
-  <script src="../js/script.js" defer></script>
-  <script src="../js/skillsbar.js" defer></script>
-</head>
-
-
-<body>
-  <header>
-    <div class="header">
-      <div class="d-mobile">
-        <div>
-          <img class="logo" src="../images/logo.png" alt="logo" onclick="location.href='../index.html'" />
-        </div>
-        <div class="menu-bar">
-          <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
-        </div>
-      </div>
-      <div class="nav-link">
-        <ul id="linkList" class="link-List d-none">
-          <li><a class="link" href="../index.html">
-              <i class="mdi mdi-home"></i>
-              home
-              </span></a></li>
-          <li>
-            <a class="link" href="../team.html">
-              <i class="mdi mdi-account-group "></i>
-              Vårt Team
-              </span></a>
-          </li>
-          <li>
-            <a class="link" href="../tjanster.html">
-              <i class="mdi mdi-cart-plus "></i>
-              Tjänster
-              </span></a>
-          </li>
-          <div class="nav-link-btn d-block-mobile">
-            <a href="../kontakt.html" class="btn-contact">Kontakta Oss</a>
+  <body>
+    <header>
+      <div class="header">
+        <div class="d-mobile">
+          <div>
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="logo"
+              onclick="location.href='index.html'"
+            />
           </div>
-        </ul>
-
+          <div class="menu-bar">
+            <a class="material-symbols-outlined" onclick="responsiveMenu()"
+              >Menu</a
+            >
+          </div>
+        </div>
+        <div class="nav-link">
+          <ul id="linkList" class="link-List d-none">
+            <li>
+              <a class="link" href="index.html">
+                <i class="mdi mdi-home"></i>
+                home</a
+              >
+            </li>
+            <li>
+              <a class="link" href="team.html">
+                <i class="mdi mdi-account-group"></i>
+                Vårt Team</a
+              >
+            </li>
+            <li>
+              <a class="link" href="tjanster.html">
+                <i class="mdi mdi-cart-plus"></i>
+                Tjänster</a
+              >
+            </li>
+            <li>
+              <div class="nav-link-btn d-block-mobile">
+                <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-link-btn d-block-pc">
+          <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+        </div>
       </div>
-      <div class="nav-link-btn d-block-pc">
-        <a href="../kontakt.html" class="btn-contact">Kontakta Oss</a>
+    </header>
+
+    <div id="p-preview" class="p-preview">
+      <div class="profile">
+        <img class="p-picture" src="../images/members/dawit.jpg" alt="Ali" />
+        <div class="p-text">
+          <p>Örebro, SWE</p>
+          <h1>Dawit Weldon</h1>
+          <h3>Front-end utvecklare</h3>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn-about-member"
+            onclick="location.href='#about-member'"
+          >
+            läs mer om Dawit
+          </button>
+        </div>
       </div>
     </div>
-  </header>
 
-  <div id="p-preview" class="p-preview">
-    <div class="profile">
-      <img class="p-picture" src="../images/members/dawit.jpg" alt="Ali" />
-      <div class="p-text">
-        <p>Örebro, SWE</p>
-        <h1>Dawit Weldon</h1>
-        <h3>Front-end utvecklare</h3>
-      </div>
-      <div>
-        <button type="button" class="btn-about-member" onclick="location.href='#about-member'">läs mer om Dawit</button>
+    <div id="about-member" class="about-member">
+      <p>
+        Som Frontend utvecklare hjälper jag till att producera fantastiska
+        användarupplevelser på webben och i appar genom användning av HTML, CSS
+        och JavaScript – samt ett ständigt föränderligt batteri med verktyg och
+        programmeringsspråk. Som Frontend utvecklare hjälper jag till att
+        producera fantastiska användarupplevelser på webben och i appar genom
+        användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt
+        batteri med verktyg och programmeringsspråk. Som Frontend utvecklare
+        hjälper jag till att producera fantastiska användarupplevelser på webben
+        och i appar genom användning av HTML, CSS och JavaScript – samt ett
+        ständigt föränderligt batteri med verktyg och programmeringsspråk. Som
+        Frontend utvecklare hjälper jag till att producera fantastiska
+        användarupplevelser på webben och i appar genom användning av HTML, CSS
+        och JavaScript – samt ett ständigt föränderligt batteri med verktyg och
+        programmeringsspråk. Som Frontend utvecklare hjälper jag till att
+        producera fantastiska användarupplevelser på webben och i appar genom
+        användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt
+        batteri med verktyg och programmeringsspråk.
+      </p>
+      <div id="skills" class="skills">
+        <div class="bar-BG">
+          <div id="html-bar" class="bar html-bar"></div>
+          <p>HTML <span class="percent"> 88%</span></p>
+        </div>
+        <div class="bar-BG">
+          <div id="css-bar" class="bar css-bar"></div>
+          <p>CSS <span class="percent"> 80%</span></p>
+        </div>
+        <div class="bar-BG">
+          <div id="js-bar" class="bar js-bar"></div>
+          <p>JS <span class="percent"> 65%</span></p>
+        </div>
+        <div class="bar-BG">
+          <div id="vue-bar" class="bar vue-bar"></div>
+          <p>VUE.JS <span class="percent"> 50%</span></p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div id="about-member" class="about-member">
-    <p>
-      Som Frontend utvecklare hjälper jag till att producera fantastiska användarupplevelser på webben och i appar genom användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt batteri med verktyg och programmeringsspråk. Som Frontend utvecklare hjälper jag till att producera fantastiska användarupplevelser på webben och i appar genom användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt batteri med verktyg och programmeringsspråk. Som Frontend utvecklare hjälper jag till att producera fantastiska användarupplevelser på webben och i appar genom användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt batteri med verktyg och programmeringsspråk. Som Frontend utvecklare hjälper jag till att producera fantastiska användarupplevelser på webben och i appar genom användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt batteri med verktyg och programmeringsspråk. Som Frontend utvecklare hjälper jag till att producera fantastiska användarupplevelser på webben och i appar genom användning av HTML, CSS och JavaScript – samt ett ständigt föränderligt batteri med verktyg och programmeringsspråk.
-    </p>
-    <div id="skills" class="skills">
-      <div class="bar-BG">
-        <div id="html-bar" class="bar html-bar"></div>
-        <p>HTML <span id="percent" class="percent"> 88%</span></p>
-      </div>
-      <div class="bar-BG">
-        <div id="css-bar" class="bar css-bar"></div>
-        <p>CSS <span id="percent" class="percent"> 80%</span></p>
-      </div>
-      <div class="bar-BG">
-        <div id="js-bar" class="bar js-bar"></div>
-        <p>JS <span id="percent" class="percent"> 65%</span></p>
-      </div>
-      <div class="bar-BG">
-        <div id="vue-bar" class="bar vue-bar"></div>
-        <p>VUE.JS <span id="percent" class="percent"> 50%</span></p>
-      </div>
-    </div>
-  </div>
-  <footer>© MR. DEVELOPER - 2028</footer>
-</body>
-
+    <footer>© MR. DEVELOPER - 2028</footer>
+  </body>
 </html>

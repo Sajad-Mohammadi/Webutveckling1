@@ -4,50 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+      integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Kontakta Oss</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
-
     <header>
       <div class="header">
         <div class="d-mobile">
           <div>
-            <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html'" />
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="logo"
+              onclick="location.href='index.html'"
+            />
           </div>
           <div class="menu-bar">
-            <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
+            <a class="material-symbols-outlined" onclick="responsiveMenu()"
+              >Menu</a
+            >
           </div>
         </div>
         <div class="nav-link">
           <ul id="linkList" class="link-List d-none">
-            <li><a class="link" href="index.html">
+            <li>
+              <a class="link" href="index.html">
                 <i class="mdi mdi-home"></i>
-                home</a></li>
+                home</a
+              >
+            </li>
             <li>
               <a class="link" href="team.html">
-                <i class="mdi mdi-account-group "></i>
-                Vårt Team
-                </span></a>
+                <i class="mdi mdi-account-group"></i>
+                Vårt Team</a
+              >
             </li>
             <li>
               <a class="link" href="tjanster.html">
-                <i class="mdi mdi-cart-plus "></i>
-                Tjänster
-                </span></a>
+                <i class="mdi mdi-cart-plus"></i>
+                Tjänster</a
+              >
             </li>
-            <div class="nav-link-btn d-block-mobile">
-              <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
-            </div>
+            <li>
+              <div class="nav-link-btn d-block-mobile">
+                <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+              </div>
+            </li>
           </ul>
-  
         </div>
         <div class="nav-link-btn d-block-pc">
           <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
@@ -56,41 +75,42 @@
     </header>
 
     <div class="container-contact">
-
-        <div class="info-colm">
-          <h2>kontakt information</h2>
-          <blockquote>
-          Kontakta oss om du behöver hjälp:
-          Telefonnummer 123-45 67 89<br>
-          Adress: örebro gatan 04<br>
+      <div class="info-colm">
+        <h2>kontakt information</h2>
+        <blockquote>
+          Kontakta oss om du behöver hjälp: Telefonnummer 123-45 67 89<br />
+          Adress: örebro gatan 04<br />
           Epost-adress: mr.developer@foretag.com
         </blockquote>
-        </div>
-
+      </div>
 
       <form action="tack-kontakt.html">
-        <label for="fnamn">Förnamn</label><br>
+        <label for="fnamn">Förnamn</label><br />
         <input
           type="text"
           id="fnamn"
           name="fnamn"
           oninvalid="this.setCustomValidity(this.willValidate?'':'')"
           placeholder="förnamn.."
-          required minlength="2"
-          pattern="^[a-zA-Z]+">
-        <br><br>
+          required
+          minlength="2"
+          pattern="^[a-zA-Z]+"
+        />
+        <br /><br />
 
-        <label for="enamn">Efternamn</label><br>
+        <label for="enamn">Efternamn</label><br />
         <input
           type="text"
           id="enamn"
           name="enamn"
           oninvalid="this.setCustomValidity(this.willValidate?'':'')"
           placeholder="efternamn.."
-          required minlength="2"
-          pattern="^[a-zA-Z]+"><br><br>
+          required
+          minlength="2"
+          pattern="^[a-zA-Z]+"
+        /><br /><br />
 
-        <label for="email">E-post</label><br>
+        <label for="email">E-post</label><br />
         <input
           type="text"
           id="email"
@@ -98,100 +118,125 @@
           oninvalid="this.setCustomValidity()"
           placeholder="e-post.."
           pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
-          required minlength="4"><br><br>
+          required
+          minlength="4"
+        /><br /><br />
 
-        <label for="tel">Telefonnummer</label><br>
+        <label for="tel">Telefonnummer</label><br />
         <input
           type="text"
           id="tel"
           name="tel"
           placeholder="123 45 67 89"
           pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}"
-          required>
+          required
+        />
         <span id="error"></span>
-        <br><br>
+        <br /><br />
 
-        <label for="stad">Stad</label><br>
+        <label for="stad">Stad</label><br />
         <select id="stad" name="stad">
           <option value="Eskilstuna">Stockholm</option>
           <option value="stockholm">Eskilstuna</option>
           <option value="örebro">Örebro</option>
-          <option value="uppsala">Uppsala</option></select><br><br>
+          <option value="uppsala">Uppsala</option></select
+        ><br /><br />
 
-        <label for="txt">Fråga</label><br>
+        <label for="txt">Fråga</label><br />
         <textarea
           id="txt"
           name="txt"
           placeholder="skriv din fråga här.."
-          required minlength="20"
+          required
+          minlength="20"
         ></textarea
-        ><br>
+        ><br />
         <div class="btn-style1">
-          <input type="submit" value="Sicka">
+          <input type="submit" value="Sicka" />
         </div>
       </form>
     </div>
     <footer>© MR. DEVELOPER - 2028</footer>
 
-
     <script>
       var fname = document.getElementById("fnamn");
       fname.addEventListener("input", () => {
-        if (fname.validity.tooLong || fname.validity.tooShort || fname.validity.valueMissing) {
+        if (
+          fname.validity.tooLong ||
+          fname.validity.tooShort ||
+          fname.validity.valueMissing
+        ) {
           fname.setCustomValidity("Namnet måste bestå av 2-8 tecken.");
           fname.reportValidity();
-        } else { fname.setCustomValidity(""); }
+        } else {
+          fname.setCustomValidity("");
+        }
       });
-      </script>
-          <script>
-            var enamn = document.getElementById("enamn");
-            enamn.addEventListener("input", () => {
-              if (enamn.validity.tooLong || enamn.validity.tooShort || enamn.validity.valueMissing) {
-                enamn.setCustomValidity("Namnet måste bestå av 2-8 tecken.");
-                enamn.reportValidity();
-              } else { enamn.setCustomValidity(""); }
-            });
-            </script>
+    </script>
+    <script>
+      var enamn = document.getElementById("enamn");
+      enamn.addEventListener("input", () => {
+        if (
+          enamn.validity.tooLong ||
+          enamn.validity.tooShort ||
+          enamn.validity.valueMissing
+        ) {
+          enamn.setCustomValidity("Namnet måste bestå av 2-8 tecken.");
+          enamn.reportValidity();
+        } else {
+          enamn.setCustomValidity("");
+        }
+      });
+    </script>
 
-            <script>
+    <script>
       var email = document.getElementById("email");
       email.addEventListener("input", () => {
-        if (email.validity.tooLong || email.validity.tooShort || email.validity.valueMissing) {
+        if (
+          email.validity.tooLong ||
+          email.validity.tooShort ||
+          email.validity.valueMissing
+        ) {
           email.setCustomValidity("Skriv in en giltig e-postadress");
           email.reportValidity();
-        } else { email.setCustomValidity(""); }
+        } else {
+          email.setCustomValidity("");
+        }
       });
-            </script>
+    </script>
 
+    <script>
+      const input = document.getElementById("tel");
+      const error = document.getElementById("error");
+      const regex = /[\\\/:(*?"a-z A-Z<>)|]+/;
 
+      input.addEventListener("input", (e) => {
+        const value = e.target.value;
 
-<script>
-const input = document.getElementById("tel");
-const error = document.getElementById('error');
-const regex = /[\\\/:(*?"a-z A-Z<>)|]+/;
+        if (regex.test(value)) {
+          input.value = value.slice(0, value.length - 1);
+          error.textContent =
+            'Nummret kan inte innehåller bökstäver eller specielt tecken: \/:*?"<>|';
+        } else {
+          error.textContent = "";
+        }
+      });
+    </script>
 
-input.addEventListener('input', (e) => {
-  const value = e.target.value;
-
-  if (regex.test(value)) {
-    input.value = value.slice(0, value.length - 1);
-    error.textContent = 'Nummret kan inte innehåller bökstäver eller specielt tecken: \/:*?"<>|';
-  } else {
-    error.textContent = '';
-  }
-});
-</script>
-
-
-<script>
-  var txt = document.getElementById("txt");
-  txt.addEventListener("input", () => {
-    if (txt.validity.tooLong || txt.validity.tooShort || txt.validity.valueMissing) {
-      txt.setCustomValidity("skriv misnt 20 tecken.");
-      txt.reportValidity();
-    } else { txt.setCustomValidity(""); }
-  });
-  </script>
-
+    <script>
+      var txt = document.getElementById("txt");
+      txt.addEventListener("input", () => {
+        if (
+          txt.validity.tooLong ||
+          txt.validity.tooShort ||
+          txt.validity.valueMissing
+        ) {
+          txt.setCustomValidity("skriv misnt 20 tecken.");
+          txt.reportValidity();
+        } else {
+          txt.setCustomValidity("");
+        }
+      });
+    </script>
   </body>
 </html>
