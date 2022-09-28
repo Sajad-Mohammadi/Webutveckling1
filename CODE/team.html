@@ -24,39 +24,44 @@
     <script src="js/script.js" defer></script>
   </head>
   <body onload="activePage(2)">
-    <header class="header">
-      <img
-        class="logo"
-        src="images/logo.png"
-        alt="logo"
-        onclick="location.href='index.html'"
-      />
 
-      <ul>
-        <li>
-          <a class="link" href="index.html"
-            >Hem <span class="material-symbols-outlined"> home </span></a
-          >
-        </li>
-        <li>
-          <a class="link" href="team.html"
-            >Vårt Team
-            <span class="material-symbols-outlined"> diversity_3 </span></a
-          >
-        </li>
-        <li>
-          <a class="link" href="tjanster.html"
-            >Tjänster
-            <span class="material-symbols-outlined">
-              add_shopping_cart
-            </span></a
-          >
-        </li>
-      </ul>
-
-      <button type="button" class="btn-contact">
-        <a href="kontakt.html">Kontakta Oss</a>
-      </button>
+    <header>
+      <div class="header">
+        <div class="d-mobile">
+          <div>
+            <img class="logo" src="images/logo.png" alt="logo" onclick="location.href='index.html'" />
+          </div>
+          <div class="menu-bar">
+            <a class="material-symbols-outlined" onclick="responsiveMenu()">Menu</a>
+          </div>
+        </div>
+        <div class="nav-link">
+          <ul id="linkList" class="link-List d-none">
+            <li><a class="link" href="index.html">
+                <i class="mdi mdi-home"></i>
+                home</a></li>
+            <li>
+              <a class="link" href="team.html">
+                <i class="mdi mdi-account-group "></i>
+                Vårt Team
+                </span></a>
+            </li>
+            <li>
+              <a class="link" href="tjanster.html">
+                <i class="mdi mdi-cart-plus "></i>
+                Tjänster
+                </span></a>
+            </li>
+            <div class="nav-link-btn d-block-mobile">
+              <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+            </div>
+          </ul>
+  
+        </div>
+        <div class="nav-link-btn d-block-pc">
+          <a href="kontakt.html" class="btn-contact">Kontakta Oss</a>
+        </div>
+      </div>
     </header>
 
     <div class="wrapper">
