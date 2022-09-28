@@ -21,15 +21,19 @@ a:hover {
 
 .cart-container{
   position:relative;
+bottom: 0px;
+
 
 }
 .cart-container,.cart{
   width:100%;
+  display: inline-block;
 }
 .cart{
   padding: 10px;
   background-color: rgb(6, 6, 6);
   color:aliceblue;
+
 }
 
 .cart-title{
