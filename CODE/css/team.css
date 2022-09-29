@@ -19,21 +19,21 @@
   margin-bottom: 25px;
 }
 
-.wrapper .our_team {
+.our_team {
   width: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.wrapper .our_team .team_member {
+.team_member {
   width: 250px;
   margin: 5px;
   background: #fff;
   padding: 20px 10px;
 }
 
-.wrapper .our_team .team_member .member_img {
+.member_img {
   background: #e9e5fa;
   max-width: 190px;
   width: 100%;
@@ -44,12 +44,12 @@
   cursor: pointer;
 }
 
-.wrapper .our_team .team_member .member_img img {
+.member_img img {
   width: 100%;
   height: 100%;
 }
 
-.wrapper .our_team .team_member h3 {
+.team_member h3 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
@@ -57,17 +57,17 @@
   margin: 15px 0 0;
 }
 
-.wrapper .our_team .team_member .roll {
+.roll {
   font-size: 10px;
 }
 
-.wrapper .our_team .team_member p {
+.team_member p {
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
 }
 
-.wrapper .our_team .team_member .member_img .social_media {
+.social_media {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -82,16 +82,16 @@
   transition: all 0.5s ease;
 }
 
-.wrapper .our_team .team_member .member_img .social_media .item {
+.item {
   margin: 0 10px;
 }
 
-.wrapper .our_team .team_member .member_img .social_media .fab {
+.fab {
   color: #d4f082;
   font-size: 20px;
 }
 
-.wrapper .our_team .team_member .member_img:hover .social_media {
+.member_img:hover .social_media {
   transform: scale(1);
 }
 
