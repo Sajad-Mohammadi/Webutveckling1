@@ -1,5 +1,3 @@
-
-
 textarea {
   width: 400px;
   height: 200px;
@@ -7,6 +5,10 @@ textarea {
   background: none;
   border: 2px solid #fb0606;
   border-radius: 10px;
+}
+
+.container-contact {
+  min-height: calc(100vh - 70px);
 }
 
 .container-contact input[type="text"] {
@@ -41,8 +43,6 @@ select {
   background-color: #fb0606;
 }
 
-
-
 .info-colm {
   max-width: 300px;
   font-size: 15px;
@@ -52,9 +52,6 @@ select {
   margin: 10px;
 }
 
-.container-contact{
+.container-contact {
   margin-left: 10px;
 }
-
-
-
